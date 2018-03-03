@@ -4,6 +4,8 @@ For now [get_repositories_details.py](https://github.com/sks444/Pygithub-Example
 
  In all of the other scripts we are only getting objects, more options coming soon..
 
+ see http://pygithub.readthedocs.io/en/latest/apis.html for more options.
+
  ## Contributing
 
  Suggestions, PRs and Issues are Welcome:)
