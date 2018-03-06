@@ -72,3 +72,21 @@ print (repo.url)
 #Get the owner of the repo
 owner = repo.owner
 print (owner.login)
+
+
+org = g1.get_organization('coala')
+repo = org.get_repo('community')
+#Get issues for a repo
+issues = repo.get_issues()
+issues_number_list = []
+for issue in issues:
+	issues_number_list.append(issue.number)
+
+
+#Get a single issue 
+issue = repo.get_issue(issues_number_list[0])
+
+#Get events for that issue
+events = issue.get_events()
+for event in events:
+	print(event.event)
